@@ -9,6 +9,11 @@ import { TodoForm } from "../TodoForm";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from '../Modal';
 
+// ERROR MSJ
+import { TodosError } from '../TodosError';
+import { TodosLoading } from '../TodosLoading';
+import { EmptyTodos } from '../EmptyTodos';
+
 function AppUi() {
 	const {
 		error,
@@ -24,24 +29,22 @@ function AppUi() {
 			<TodoCounter />
 			<TodoSearch />
 
-			{() =>
-			(
-				<TodoList>
-					{error && <p>hubo un error...</p>}
-					{loading && <p>Estamos cargando...</p>}
-					{(!loading && !searchedTodos.length) && <p>Crea una tarea flojo..!</p>}
+			<TodoList>
+				{error && <TodosError error={error} />}
+				{loading && <TodosLoading />}
+				{(!loading && !searchedTodos.length) && <EmptyTodos />}
 
-					{searchedTodos.map(todo => (
-						<TodoItem
-							key={todo.text}
-							text={todo.text}
-							completed={todo.completed}
-							onComplete={() => completeTodo(todo.text)}
-							onDelete={() => deletTodo(todo.text)}
-						/>
-					))}
-				</TodoList>
-			)}
+				{searchedTodos.map(todo => (
+					<TodoItem
+						key={todo.text}
+						text={todo.text}
+						completed={todo.completed}
+						onComplete={() => completeTodo(todo.text)}
+						onDelete={() => deletTodo(todo.text)}
+					/>
+				))}
+			</TodoList>
+
 			{
 				!!openModal && (
 					<Modal>
