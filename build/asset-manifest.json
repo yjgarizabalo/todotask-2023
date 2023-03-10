@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/todotask-2023/static/css/main.ed70cb51.css",
+    "main.js": "/todotask-2023/static/js/main.6d1a5387.js",
+    "static/media/delete.svg": "/todotask-2023/static/media/delete.4cde6cf6920bc0095507d84686670872.svg",
+    "index.html": "/todotask-2023/index.html",
+    "static/media/check.svg": "/todotask-2023/static/media/check.492ad1c1f4edd222ed97679fdc0ef298.svg",
+    "main.ed70cb51.css.map": "/todotask-2023/static/css/main.ed70cb51.css.map",
+    "main.6d1a5387.js.map": "/todotask-2023/static/js/main.6d1a5387.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed70cb51.css",
+    "static/js/main.6d1a5387.js"
+  ]
+}
