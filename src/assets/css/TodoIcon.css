@@ -25,9 +25,9 @@
 }
 
 .Icon-container:hover .Icon-svg--check {
-  fill: green;
+  fill: rgb(0, 128, 73);
 }
 
 .Icon-container:hover .Icon-svg--delete {
-  fill: red;
+  fill: rgba(243, 26, 26, 0.911);
 }

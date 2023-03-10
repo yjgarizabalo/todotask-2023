@@ -11,7 +11,7 @@ function TodoSearch() {
         <input
             className="TodoSearch"
             type="text"
-            placeholder="Exito"
+            placeholder="Exito 🔍"
             value={searchValue}
             onChange={onChangeValueChange}
         />,
