@@ -2,7 +2,7 @@
     background: #F9FBFC;
     border-radius: 2px;
     border-style: solid;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     border-width: 1.5px;
     margin: 0 24px;
     height: 64px;
@@ -34,4 +34,8 @@
 
 .TodoSearch:focus {
     outline-color: #3483fa;
+}
+
+.TodoSearch:disabled {
+    opacity: 25%;
 }

@@ -2,9 +2,9 @@ import React from 'react';
 import '../assets/css/TodoCounter.css'
 
 
-function TodoCounter({ totalTodos, completedTodos }) {
+function TodoCounter({ totalTodos, completedTodos, loading }) {
     return (
-        <h2 className='TitleTodoCounter'>Has completado {completedTodos} de {totalTodos} TODOs</h2>
+        <h2 className={`TitleTodoCounter ${!!loading && "TitleTodoCounter--loading"}`}>Has completado {completedTodos} de {totalTodos} TODOs</h2>
     );
 }
 
