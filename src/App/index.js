@@ -8,6 +8,7 @@ import { TodoList } from "../TodoList";
 import { TodoForm } from "../TodoForm";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from '../Modal';
+import { ChangeAlertWithStorageListener } from "../ChangeAlert";
 
 // ERROR MSJ
 import { TodosError } from '../TodosError';
@@ -28,6 +29,7 @@ function App() {
     searchValue,
     setSearchValue,
     addTodo,
+    sincronizeTodos
   } = useTodos()
 
   return (
@@ -80,6 +82,9 @@ function App() {
       }
       <CreateTodoButton
         setOpenModal={setOpenModal}
+      />
+      <ChangeAlertWithStorageListener
+        sincronize={sincronizeTodos}
       />
     </React.Fragment>
   );

@@ -69,17 +69,18 @@ textarea:focus {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    ;
 }
 
 .TodoForm-button--add {
-    background: #3483fa;;
+    background: #3483fa;
+    ;
     border-radius: 5px;
     color: #fff;
 }
 
-.TodoForm-button--add:hover{
-    background: #0c6dfe;;
+.TodoForm-button--add:hover {
+    background: #0c6dfe;
+    ;
 }
 
 .TodoForm-button--cancel {
